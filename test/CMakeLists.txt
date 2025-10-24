@@ -217,6 +217,7 @@ add_executable(
     test_tplqt2.cc
     test_tpmlqt.cc
     test_tpmqrt.cc
+    test_tpmqrt_device.cc
     test_tpqrt.cc
     test_tpqrt_device.cc
     test_tpqrt2.cc

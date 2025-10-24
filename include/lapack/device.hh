@@ -187,6 +187,16 @@ void larfg(
     lapack::Queue& queue );
 
 template <typename scalar_t>
+int64_t tpmqrt(
+    lapack::Side side, lapack::Op trans,
+    int64_t m, int64_t n, int64_t k, int64_t l, int64_t nb,
+    scalar_t const* dV, int64_t ldv,
+    scalar_t const* dT, int64_t ldt,
+    scalar_t* dA, int64_t ldda,
+    scalar_t* dB, int64_t lddb,
+    lapack::Queue& queue );
+
+template <typename scalar_t>
 int64_t tpqrt(
     int64_t m, int64_t n, int64_t l, int64_t nb,
     scalar_t* dA, int64_t ldda,

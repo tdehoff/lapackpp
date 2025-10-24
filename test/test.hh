@@ -470,6 +470,7 @@ void test_getrf_device ( Params& params, bool run );
 void test_geqrf_device ( Params& params, bool run );
 void test_heevd_device ( Params& params, bool run );
 void test_larfg_device ( Params& params, bool run );
+void test_tpmqrt_device ( Params& params, bool run );
 void test_tpqrt_device ( Params& params, bool run );
 void test_tpqrt2_device( Params& params, bool run );
 void test_tprfb_device ( Params& params, bool run );

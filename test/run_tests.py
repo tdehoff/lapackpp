@@ -548,6 +548,8 @@ if (opts.qr and opts.device):
     [ 'dev-geqrf',  gen + dtype + align + n + wide + tall ],
     [ 'dev-tpqrt',  gen + dtype + align + mn + l + nb ],
     [ 'dev-tpqrt2', gen + dtype + align + mn + l ],
+    [ 'dev-tpmqrt', gen + dtype_real    + align + mn + l + nb + side + trans    ],  # real does trans = N, T, C
+    [ 'dev-tpmqrt', gen + dtype_complex + align + mn + l + nb + side + trans_nc ],  # complex does trans = N, C, not T
     [ 'dev-tprfb',  gen + dtype + align + mn + l + trans ], # TODO: fix cases for side and direction
     ]
 
@@ -717,7 +719,7 @@ if (opts.aux_house and opts.host):
     [ 'larfb', gen + dtype + align + mnk + side + trans + direction + storev ],
     [ 'larft', gen + dtype + align + nk  + direction + storev ],
     ]
-    
+
 if (opts.aux_house and opts.device):
     # GPU
     cmds += [

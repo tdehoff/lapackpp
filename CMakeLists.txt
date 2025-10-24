@@ -489,6 +489,7 @@ add_library(
     src/tplqt2.cc
     src/tpmlqt.cc
     src/tpmqrt.cc
+    src/tpmqrt_gpu.cc
     src/tpqrt.cc
     src/tpqrt_gpu.cc
     src/tpqrt2.cc
